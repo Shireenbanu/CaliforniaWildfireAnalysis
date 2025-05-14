@@ -38,3 +38,4 @@ def correlation_matrix(df : pd.DataFrame) -> None :
     sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm", fmt=".2f")
     plt.title("Correlation Matrix of Numerical Features")
     plt.show()
+
