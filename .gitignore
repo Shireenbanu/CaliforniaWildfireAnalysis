@@ -1,1 +1,4 @@
 cal_fire_analytics_venv/
+.DS_Store
+.ipynb_checkpoints
+utils/__pycache__
