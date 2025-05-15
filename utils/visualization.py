@@ -9,7 +9,7 @@ def histogram_and_box_plot(column_name: str, df: pd.DataFrame) -> None:
     fig1 = px.histogram(df, x=column_name, nbins = 20, title = column_name)
     # boxplot
     fig2= px.box(df, y=column_name, title="Box Plot for Earned Premium 2020")
-
+     
     fig = make_subplots(rows=1, cols = 2, subplot_titles=(f'Histogram of {column_name}', f'Boxplot of {column_name}'))
 
     for trace in fig1.data:

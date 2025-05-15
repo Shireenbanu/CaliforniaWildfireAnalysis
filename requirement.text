@@ -1,0 +1,3 @@
+!pip install pandas==2.0.0
+!pip install ppscore
+!pip install importlib
