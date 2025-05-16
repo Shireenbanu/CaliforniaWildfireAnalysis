@@ -18,7 +18,7 @@ def highly_correlated_features(df: pd.DataFrame, target:str) -> list:
     for column in upper.columns:
         for row in upper.index:
             if(not(np.isnan(upper.loc[row,column])) and (upper.loc[row, column]>0.9) and (target not in [row, column])):
-                # print(column, row,df[column].corr(df[target]),df[row].corr(df[target]) )
+                print(column, row,df[column].corr(df[target]),df[row].corr(df[target]) )
                 feature1_corr =df[row] 
                 feature2_corr = df[column]
                 score_row = np.float32(pps.score(df, column, target)["ppscore"]).round(4)
@@ -27,6 +27,6 @@ def highly_correlated_features(df: pd.DataFrame, target:str) -> list:
                     feature_to_drop = row if feature1_corr.corr(df[target]) < feature2_corr.corr(df[target]) else column
                 else:
                     feature_to_drop = row if score_row<score_column else column
-                # print(f"feature_to_drop: {feature_to_drop}, predictive score {row}: {score_row}, predictive score {column}: {score_column}")
+                print(f"feature_to_drop: {feature_to_drop}, predictive score {row}: {score_row}, predictive score {column}: {score_column}")
                 features_to_drop.append(feature_to_drop)
     return features_to_drop
