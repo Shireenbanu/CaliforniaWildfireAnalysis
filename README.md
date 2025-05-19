@@ -1,5 +1,5 @@
 
-![images/wildfire.webp](attachment:image-3.png)
+![Wildfire](https://github.com/Shireenbanu/CaliforniaWildfireAnalysis/blob/main/images/wildfire.webp)
 
 # California Wildfire Impact On Home Insurance Premium
 Dataset:
@@ -97,11 +97,11 @@ Note: Premium rates from 2020 were excluded in both models to avoid data leakage
 
 #### Before feature Engineering:
 
-![images/before_feature_engineering.png](attachment:image-3.png)
+![before_feature_engineering](https://github.com/Shireenbanu/CaliforniaWildfireAnalysis/blob/main/images/before_feature_engineering.png)
 
 #### After feature Engineering:
 
-![images/after_feature_engineering.png](attachment:image.png)
+![after_feature_engineering](https://github.com/Shireenbanu/CaliforniaWildfireAnalysis/blob/main/images/after_feature_engineering.png)
 
 Interpretation:
 
@@ -109,7 +109,8 @@ The Avg Fire Risk Score was a strong predictor in both versions. After feature e
 
 #### Residual Plot
 
-![images/residual.png](attachment:image-2.png)
+![residual.png](https://github.com/Shireenbanu/CaliforniaWildfireAnalysis/blob/main/images/residual.png)
+
 
 Residual = Actual - Predicted
 
