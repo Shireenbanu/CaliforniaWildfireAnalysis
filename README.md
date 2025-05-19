@@ -1,3 +1,6 @@
+
+![images/wildfire.webp](attachment:image-3.png)
+
 # California Wildfire Impact On Home Insurance Premium
 Dataset:
 This dataset contains information about home insurance and wildfire risk in different ZIP codes across California. It includes average coverage amounts for buildings (Coverage A) and personal items (Coverage C), the average fire risk score for each area, and how many homes fall into different fire risk levels. It also shows how much insurance companies earned in premiums and how much they paid out in claims, both for regular and major (catastrophic) fire and smoke damage. This data can help analyze how wildfire risk affects insurance prices and predict future premiums.
@@ -18,7 +21,7 @@ Since the analysis focuses on understanding how catastrophic losses in 2020 infl
 
 * Exclude details related to 2021 catastrophic losses, as they are not relevant to the prediction objective.
 
-### Univariate Analysis:
+## Univariate Analysis:
 
 * Most features exhibit heavy right skewness, indicating the presence of significant outliers far from the mean.
 
@@ -29,7 +32,7 @@ Since the analysis focuses on understanding how catastrophic losses in 2020 infl
 Impact:
 Only extreme outliers were handled by capping values at the 99th percentile, ensuring that rare but impactful data points are retained while eliminating excessively extreme cases.
 
-### Bivariate Analysis:
+## Bivariate Analysis:
 
 1. Scatter Plots – To visually inspect the relationship between individual features and the target variable.
 
@@ -48,7 +51,7 @@ High Collinearity Removal: Removed 9 features that showed high collinearity (cor
 
 In Total, __9 features are removed out of 29__.
 
-# Feature Engineering Summary: Insurance Risk Metrics
+## Feature Engineering Summary: Insurance Risk Metrics
 
 ### Objective
 Derived the **exposure-adjusted risk metrics** that standardize claims, losses, and premiums across policies.
