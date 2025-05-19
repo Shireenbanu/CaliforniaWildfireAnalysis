@@ -94,11 +94,11 @@ Note: Premium rates from 2020 were excluded in both models to avoid data leakage
 
 #### Before feature Engineering:
 
-![image-3.png](attachment:image-3.png)
+![images/before_feature_engineering.png](attachment:image-3.png)
 
 #### After feature Engineering:
 
-![image.png](attachment:image.png)
+![images/after_feature_engineering.png](attachment:image.png)
 
 Interpretation:
 
@@ -106,7 +106,7 @@ The Avg Fire Risk Score was a strong predictor in both versions. After feature e
 
 #### Residual Plot
 
-![image-2.png](attachment:image-2.png)
+![images/residual.png](attachment:image-2.png)
 
 Residual = Actual - Predicted
 
